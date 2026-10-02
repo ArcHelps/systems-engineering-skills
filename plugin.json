@@ -8,16 +8,16 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Arc Engineering",
+        "displayName": "Arc Skills",
         "shortDescription": "Specific engineering tasks, local file tools",
         "longDescription": "Review requirements, derive children, assess test evidence, analyze interfaces and prepare engineering reviews using 100 focused workflows. Supporting file tools run locally. The connected assistant performs AI reasoning.",
         "developerName": "Arc",
         "category": "Productivity",
         "capabilities": ["Read", "Write"],
         "defaultPrompt": [
-          "Review this requirement against ECSS-E-ST-10-06.",
-          "Derive sub-requirements from this parent requirement.",
-          "Assess whether these test results demonstrate the requirement has been met."
+          "Use Arc Skills to review this requirement against ECSS-E-ST-10-06.",
+          "Use Arc Skills to derive sub-requirements from this parent requirement.",
+          "Use Arc Skills to assess whether these test results demonstrate the requirement has been met."
         ]
       }
     }

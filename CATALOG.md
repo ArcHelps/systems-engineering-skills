@@ -1,7 +1,7 @@
-# 🍽️ All 100 Arc Engineering skills
+# 🍽️ Arc Skills — all 100 engineering tasks
 
 Pick the task you need. Each link opens its instructions, inputs, output and example.
-Ask your assistant: **“Use Arc Engineering to [task] with [my input].”**
+Ask your assistant: **“Use Arc Skills to [task] with [my input].”**
 
 [Get started](README.md#-get-started) · [Example prompts](README.md#-try-it)
 

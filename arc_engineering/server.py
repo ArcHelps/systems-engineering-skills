@@ -86,9 +86,10 @@ def create_server(workspace_root: Path | str) -> MCPServer:
     catalog = Catalog()
     workspace = Workspace(workspace_root)
     server = MCPServer(
-        "Arc Engineering",
+        "Arc Skills",
         version=__version__,
         instructions=(
+            "When the user asks to use Arc Skills, use this toolkit. "
             "One hundred specific systems-engineering workflows. Search skills, load the selected "
             "instructions and relevant references, then perform the engineering judgment in the host. "
             "Tools do local deterministic processing only; no server-side AI or external system mutation exists. "

@@ -3,7 +3,7 @@
 **100 free systems engineering skills for your AI assistant.**
 
 Clean requirements. Review against ECSS. Derive sub-requirements. Check verification evidence.
-By Arc. Powered by the Arc Engineering toolkit. No account needed.
+By Arc. Powered by the Arc Skills toolkit. No account needed.
 
 **[Browse all 100 skills →](CATALOG.md)** · [Setup](docs/SETUP.md) · [Example prompts](#-try-it)
 
@@ -33,7 +33,7 @@ or attach the ZIP to a ChatGPT conversation that supports file analysis.
 **Copy and paste this setup prompt:**
 
 ```text
-Set up Systems Engineering Skills from:
+Set up Arc Skills from:
 https://github.com/ArcHelps/systems-engineering-skills
 Use the repository or ZIP I provided, or fetch the public repository if your tools allow it.
 Read README.md and docs/SETUP.md, then choose the route this client supports.
@@ -62,7 +62,7 @@ Attach a file or place it in your configured work folder, then paste a prompt:
 **Clean requirements**
 
 ```text
-Use Arc Engineering to clean and map customer-requirements.xlsx.
+Use Arc Skills to clean and map customer-requirements.xlsx.
 Preserve every source ID and original statement. Show the field mapping,
 duplicate IDs, TBDs/TBCs, missing information and unresolved links.
 Give me a cleaned workbook and an import proposal. Reconcile all row counts.
@@ -71,7 +71,7 @@ Give me a cleaned workbook and an import proposal. Reconcile all row counts.
 **Review a specification**
 
 ```text
-Use Arc Engineering to extract and review this requirements PDF.
+Use Arc Skills to extract and review this requirements PDF.
 Keep page references, notes, figures and deleted requirements visible.
 Give me a requirements table and the most consequential issues first:
 contradictions, broken references, unclear limits and unverifiable statements.
@@ -81,7 +81,7 @@ Separate confirmed problems from ambiguities. Don't invent missing values.
 **Review against ECSS**
 
 ```text
-Use Arc Engineering to review REQ-014 against the ECSS-E-ST-10-06 edition
+Use Arc Skills to review REQ-014 against the ECSS-E-ST-10-06 edition
 I attached. Cite the inspected criteria, explain each finding and propose
 the smallest correction. Preserve the original wording beside the proposal.
 If you cannot inspect the applicable standard, label the review advisory.
@@ -90,7 +90,7 @@ If you cannot inspect the applicable standard, label the review advisory.
 **No file yet?**
 
 ```text
-Use Arc Engineering to review this requirement:
+Use Arc Skills to review this requirement:
 "The unit shall provide an appropriate warning quickly."
 Explain what is missing and propose clearer wording without inventing a latency.
 ```

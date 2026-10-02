@@ -9,7 +9,9 @@ from .catalog import Catalog
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Arc systems-engineering skills and local MCP")
+    parser = argparse.ArgumentParser(
+        description="Arc Skills: systems-engineering skills and local MCP"
+    )
     subcommands = parser.add_subparsers(dest="command", required=True)
     serve = subcommands.add_parser("serve", help="Start the MCP server")
     serve.add_argument("--workspace", default=os.environ.get("ARC_ENGINEERING_WORKSPACE"))

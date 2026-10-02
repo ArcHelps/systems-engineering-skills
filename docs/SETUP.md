@@ -6,7 +6,7 @@ or approved directory listing is currently available.
 
 ## Codex on your computer
 
-From the Arc Engineering folder, on macOS or Linux:
+From the Arc Skills folder, on macOS or Linux:
 
 ```sh
 uv --no-config sync --locked
@@ -43,14 +43,14 @@ uv --no-config run --locked arc-engineering config --workspace /absolute/path/to
 Merge its output into your Codex MCP configuration, preserving existing entries.
 Alternatively, enter the generated command, arguments and environment in the desktop
 app's MCP settings. Restart the client if the server is not yet visible. In a fresh
-conversation, ask: `Use Arc Engineering to list five requirement-review skills.`
+conversation, ask: `Use Arc Skills to list five requirement-review skills.`
 Configuration listing alone does not prove the server connected; confirm tool discovery.
 
 Copy only the files you want processed into `arc-engineering-work`. For a safe first
 run, copy `examples/customer-requirements.csv` there and ask:
 
 ```text
-Use Arc Engineering to clean and map customer-requirements.csv.
+Use Arc Skills to clean and map customer-requirements.csv.
 Show all four requirements, source columns and the proposed parent links.
 Review REQ-004 for verifiability. Export new files without overwriting inputs.
 ```

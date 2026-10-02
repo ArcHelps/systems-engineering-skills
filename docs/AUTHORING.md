@@ -1,4 +1,4 @@
-# Arc Engineering toolkit authoring contract
+# Arc Skills toolkit authoring contract
 
 This is a standalone local MCP and portable skills library.
 Skills are named engineering tasks. The connected assistant performs judgment; the
