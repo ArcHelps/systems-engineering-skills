@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "arc-engineering-mcp"
+version = "0.1.0"
+description = "One hundred systems-engineering skills and local MCP file tools"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+  "mcp==2.2.0",
+  "PyYAML>=6.0.2,<7",
+  "openpyxl>=3.1.5,<4",
+  "defusedxml>=0.7.1,<1",
+  "pypdf>=5,<7",
+  "python-docx>=1.1.2,<2",
+  "jsonschema>=4.23,<5",
+]
+
+[project.urls]
+Repository = "https://github.com/ArcHelps/systems-engineering-skills"
+
+[project.scripts]
+arc-engineering = "arc_engineering.__main__:main"
+
+[dependency-groups]
+dev = ["ruff==0.15.19"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["arc_engineering"]
+
+[tool.hatch.build.targets.wheel.force-include]
+skills = "arc_engineering/data/skills"
+references = "arc_engineering/data/references"
+schemas = "arc_engineering/data/schemas"
+
+[tool.hatch.build.targets.sdist]
+exclude = ["/evaluations/results/**"]
+include = ["arc_engineering", "skills", "references", "schemas", "tests", "evaluations", "examples", "README.md", "CATALOG.md", "docs", "LICENSE", "plugin.json", "mcp.json", "pyproject.toml", "uv.lock", "scripts"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

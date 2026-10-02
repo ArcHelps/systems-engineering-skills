@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "arc-engineering": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["--no-config", "run", "--project", "${PLUGIN_ROOT}", "--locked", "--no-dev", "${PLUGIN_ROOT}/scripts/launch.py"],
+      "cwd": "./"
+    }
+  }
+}

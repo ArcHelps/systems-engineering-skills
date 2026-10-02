@@ -1,0 +1,610 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:arc-engineering:exchange:1.0",
+  "title": "Local engineering exchange proposal",
+  "description": "Local exchange IDs are source/workspace identities. This is not an external application API payload.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "items",
+    "relationships"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "metadata": {
+      "type": "object"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/relationship"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "name",
+        "fields"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "import_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "type": {
+          "enum": [
+            "requirement",
+            "system",
+            "test",
+            "test_plan",
+            "risk",
+            "property"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "active",
+            "retired"
+          ]
+        },
+        "owners": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "fields": {
+          "type": "object"
+        },
+        "custom_fields": {
+          "type": "object"
+        },
+        "metadata": {
+          "type": "object"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "requirement"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "fields": {
+                "$ref": "#/$defs/requirement_fields"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "system"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "fields": {
+                "$ref": "#/$defs/system_fields"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "test"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "fields": {
+                "$ref": "#/$defs/test_fields"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "test_plan"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "fields": {
+                "$ref": "#/$defs/test_plan_fields"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "risk"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "fields": {
+                "$ref": "#/$defs/risk_fields"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "property"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "fields": {
+                "$ref": "#/$defs/property_fields"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "requirement_fields": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "statement"
+      ],
+      "properties": {
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "priority": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "requirement_types": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Functional",
+              "Performance",
+              "Interface",
+              "Design Criteria",
+              "Environmental",
+              "Operational",
+              "Safety",
+              "Compliance",
+              "Quality",
+              "Reliability",
+              "Security",
+              "Physical",
+              "Human Factors",
+              "Maintainability",
+              "Mission",
+              "Stakeholder",
+              "Software",
+              "Hardware",
+              "Derived"
+            ]
+          }
+        }
+      }
+    },
+    "system_fields": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "property_fields": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unit"
+      ],
+      "properties": {
+        "expression": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "test_fields": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "objective",
+        "acceptance_criteria"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "test",
+            "analysis",
+            "inspection",
+            "demonstration",
+            "modeling",
+            "review"
+          ]
+        },
+        "objective": {
+          "type": "string",
+          "minLength": 1
+        },
+        "acceptance_criteria": {
+          "type": "string",
+          "minLength": 1
+        },
+        "procedure": {
+          "type": "string"
+        },
+        "automation_ref": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "action",
+              "expected_result"
+            ],
+            "properties": {
+              "id": {
+                "$ref": "#/$defs/id"
+              },
+              "action": {
+                "type": "string"
+              },
+              "expected_result": {
+                "type": "string"
+              },
+              "constraint_relationship_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "test_plan_fields": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "objective"
+      ],
+      "properties": {
+        "objective": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entry_criteria": {
+          "type": "string"
+        },
+        "exit_criteria": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "risk_fields": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cause",
+        "event",
+        "consequence",
+        "severity",
+        "likelihood"
+      ],
+      "properties": {
+        "cause": {
+          "type": "string",
+          "minLength": 1
+        },
+        "event": {
+          "type": "string",
+          "minLength": 1
+        },
+        "consequence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "severity": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        },
+        "likelihood": {
+          "enum": [
+            "rare",
+            "unlikely",
+            "possible",
+            "likely",
+            "almost_certain"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "relationship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "source",
+        "target",
+        "fields"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "import_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "type": {
+          "enum": [
+            "contains",
+            "derives",
+            "allocated_to",
+            "satisfied_by",
+            "interface",
+            "verifies",
+            "includes_test",
+            "identifies",
+            "mitigated_by",
+            "has_property",
+            "constrains",
+            "depends_on"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/id"
+        },
+        "target": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fields": {
+          "type": "object"
+        },
+        "metadata": {
+          "type": "object"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "interface"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "fields": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "kind": {
+                    "enum": [
+                      "electrical",
+                      "mechanical",
+                      "thermal",
+                      "software",
+                      "fluid",
+                      "other"
+                    ]
+                  },
+                  "direction": {
+                    "enum": [
+                      "bidirectional",
+                      "source_to_target",
+                      "target_to_source"
+                    ]
+                  },
+                  "exchanged_item": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "requirement_ids": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                      "$ref": "#/$defs/id"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "constrains"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "fields": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "operator",
+                  "limit"
+                ],
+                "properties": {
+                  "operator": {
+                    "enum": [
+                      "<",
+                      "<=",
+                      "=",
+                      ">=",
+                      ">"
+                    ]
+                  },
+                  "limit": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "includes_test"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "fields": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "position"
+                ],
+                "properties": {
+                  "position": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 2147483647
+                  },
+                  "label": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "not": {
+                  "enum": [
+                    "interface",
+                    "constrains",
+                    "includes_test"
+                  ]
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "fields": {
+                "type": "object",
+                "maxProperties": 0
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "requirement": {"id": "REQ-003", "revision": "B", "statement": "The controller shall report a detected sensor fault within 100 ms."},
+  "test": {"id": "TEST-03", "procedure_revision": "2", "configuration": "controller firmware 1.2", "measurement": "98 ms", "uncertainty": "bounded ±5 ms", "instrument_calibration": "current", "report": "raw timing traces retained"},
+  "project_context": {"decision_rule": null, "requirement_configuration": "controller firmware 1.3 with modified fault filter"},
+  "purpose": "Synthetic example: distinguish nominal measurement from current applicable accepted evidence."
+}

@@ -1,0 +1,5 @@
+ID,Name,Statement,Parent ID,Notes,Customer field
+REQ-001,Frame delivery,During imaging the payload shall deliver calibrated frames at a rate of at least 2 Hz.,,Source baseline A,Payload owner
+REQ-002,Image processing,During imaging the processor shall produce each calibrated frame within 400 ms.,REQ-001,Allocation requires review,Processing team
+REQ-003,Status reporting,The controller shall report a detected sensor fault within 100 ms.,,Detection semantics defined in interface document,Controller team
+REQ-004,Fault warning,The unit shall provide an appropriate warning quickly.,,Unresolved warning type and latency,Operations
