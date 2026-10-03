@@ -31,3 +31,5 @@ Do not approve, apply, or merge the change. An ECR is an artifact for human revi
 - Problem and exact proposed delta are separate.
 - Affected revisions and evidence are listed.
 - Open choices remain with named decision owners.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

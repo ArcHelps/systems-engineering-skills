@@ -31,3 +31,5 @@ Allocation is a proposed engineering agreement, not proof of achieved end-to-end
 - Metric and aggregation rule are explicit.
 - Every contributor is included or marked unknown.
 - Reserved headroom is not called verified margin.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

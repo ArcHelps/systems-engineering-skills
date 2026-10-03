@@ -31,3 +31,5 @@ Propose contains relationships as a model change only after human review; do not
 - Every proposed child has a defensible boundary.
 - Parent responsibilities are accounted for.
 - Existing stable Systems are reused.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

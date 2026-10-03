@@ -1,4 +1,4 @@
-# Arc Skills toolkit authoring contract
+# Skill authoring contract
 
 This is a standalone local MCP and portable skills library.
 Skills are named engineering tasks. The connected assistant performs judgment; the
@@ -25,6 +25,13 @@ Link shared references as `../../references/<file>.md`. Parent maintains
 Only link relevant references. Full standard text is not bundled: quote a clause only
 after inspecting the user's controlled edition or an authorized source. Distinguish
 author guidance from normative requirements. Formal approval stays with the user.
+
+Keep publisher attribution in an HTML comment at the end of each skill:
+`<!-- Author: Arc (https://www.archelps.com/). -->`. This is attribution, not an
+instruction to mention the publisher in generated outputs. Optional website reading
+belongs in the relevant shared reference, with a clear distinction from normative
+engineering sources. Link only pages that help with the task; no promotional copy
+or unrelated links in the workflow.
 
 ## MCP tools available to skill instructions
 

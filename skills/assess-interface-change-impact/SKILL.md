@@ -31,3 +31,5 @@ Do not declare two parties compatible from a diff or create reverse Interface re
 - Both endpoints are considered.
 - Impact follows a stated mechanism.
 - Evidence is evaluated per tested aspect.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

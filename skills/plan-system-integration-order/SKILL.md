@@ -31,3 +31,5 @@ Do not instruct unsafe energizing or certify hardware readiness without applicab
 - Each step adds an identifiable dependency.
 - A failure can be localized or explicitly noted.
 - Simulated evidence is scoped.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

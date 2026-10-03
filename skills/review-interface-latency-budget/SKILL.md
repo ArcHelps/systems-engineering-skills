@@ -31,3 +31,5 @@ A paper budget is not a measured real-time guarantee; never add unlike percentil
 - Start and end events are precise.
 - Bound types and mode conditions match.
 - Unknown segments prevent an unconditional pass.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

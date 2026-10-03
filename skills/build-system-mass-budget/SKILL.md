@@ -31,3 +31,5 @@ Do not invent growth policy, weighings, or approval of a mass exception. A missi
 - Mass basis and inclusions are explicit.
 - Rollups avoid duplicate assemblies.
 - Unknown mass prevents false compliance.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

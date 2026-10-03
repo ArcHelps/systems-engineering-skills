@@ -31,3 +31,5 @@ Do not turn an actor label into an exchange Item Type. A context boundary is vie
 - Every crossing has both ends and a direction.
 - Boundary choices cite evidence or an assumption.
 - Ambiguous ownership remains explicit.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

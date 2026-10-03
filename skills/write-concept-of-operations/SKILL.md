@@ -31,3 +31,5 @@ A concept of operations is a proposal for review, not a detailed design, require
 - Each phase has trigger and outcome.
 - Off-nominal and recovery behavior are addressed where material.
 - Unapproved assumptions are visible.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

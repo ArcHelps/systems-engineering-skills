@@ -31,3 +31,5 @@ A trace matrix records relationships and evidence status, not certification or p
 - Stable IDs and snapshot revision are preserved.
 - Missing, unexecuted, failed, and stale are distinct.
 - Counts use a stated scope.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

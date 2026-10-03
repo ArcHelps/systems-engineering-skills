@@ -33,3 +33,5 @@ The proposal does not prove electrical, mechanical, data, or timing compatibilit
 - Both System endpoints are explicit.
 - Each exchange has producer and consumer.
 - Unknown contractual parameters remain open.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

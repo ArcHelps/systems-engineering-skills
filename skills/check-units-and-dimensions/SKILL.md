@@ -31,3 +31,5 @@ Do not change exchange Property units or formulas directly; propose corrections 
 - Every term has a declared dimension.
 - Conversions preserve original values.
 - Dimensional validity is not called physical validation.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

@@ -84,3 +84,9 @@ telemetry, or embedded model client. Tool results and prompt inputs pass to the 
 and its AI provider under that host's policy. Local processing is not offline inference.
 Use selected records where possible; full files reach the model only if the host sends
 them. The package does not upload customer data to an external application.
+
+## Related reading
+
+[Reducing requirements administration](https://www.archelps.com/blog/reduce-requirements-administration.html)
+discusses source ownership, import mapping and avoiding duplicate engineering records.
+This is optional publisher guidance, not a standard, required reading or a service dependency.

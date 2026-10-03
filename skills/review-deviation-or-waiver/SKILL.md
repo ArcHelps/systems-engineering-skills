@@ -31,3 +31,5 @@ Never grant a waiver, reduce a safety limit, or infer certification authority. P
 - Criterion and departure are quantified where possible.
 - Scope and applicability are explicit.
 - Disposition is left to the authorized reviewer.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

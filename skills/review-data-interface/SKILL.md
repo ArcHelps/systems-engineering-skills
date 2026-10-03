@@ -31,3 +31,5 @@ Do not infer network security, safety acceptance, or real-time guarantees from a
 - Field semantics and units are compared.
 - Version and invalid/stale behavior are addressed.
 - Protocol match is not mistaken for verified performance.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

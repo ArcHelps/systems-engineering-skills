@@ -31,3 +31,5 @@ This is an architecture screen, not an FMEA, quantitative reliability result, or
 - Loss condition and failure assumptions are stated.
 - Redundancy includes shared dependencies.
 - Acceptable alternatives are credited only with evidence.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

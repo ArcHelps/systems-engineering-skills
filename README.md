@@ -1,9 +1,9 @@
 # 🛠️ Systems Engineering Skills
 
-**100 free systems engineering skills for your AI assistant.**
+**100 free AI skills for systems and hardware engineers.**
 
-Clean requirements. Review against ECSS. Derive sub-requirements. Check verification evidence.
-By Arc. Powered by the Arc Skills toolkit. No account needed.
+Review requirements against ECSS. Check electrical and mechanical interfaces.
+Build power and mass budgets. Review environmental qualification tests, FMEA and verification evidence.
 
 **[Browse all 100 skills →](CATALOG.md)** · [Setup](docs/SETUP.md) · [Example prompts](#-try-it)
 
@@ -21,6 +21,13 @@ By Arc. Powered by the Arc Skills toolkit. No account needed.
 | Test results + acceptance criteria | [Assess test results](skills/assess-test-results/SKILL.md) | Evidence assessment, limitations and unresolved outcomes |
 | A tender + your response evidence | [Build a tender compliance matrix](skills/build-tender-compliance-matrix/SKILL.md) | Clause-by-clause responses, evidence and exceptions |
 | Two versions of a specification | [Compare specification versions](skills/compare-requirements-specification-versions/SKILL.md) | A change register and candidate verification impacts |
+| An electrical interface specification | [Review an electrical interface](skills/review-electrical-interface/SKILL.md) | Missing or inconsistent voltage, current, signal, grounding and fault parameters |
+| Mechanical interface drawings | [Review a mechanical interface](skills/review-mechanical-interface/SKILL.md) | Mating geometry, datum, tolerance, clearance and load checks; unresolved drawing details |
+| Component loads and supply limits | [Build a system power budget](skills/build-system-power-budget/SKILL.md) | Power demand by operating mode, remaining margin and unresolved loads |
+| Component masses and quantities | [Build a system mass budget](skills/build-system-mass-budget/SKILL.md) | Component totals, subsystem rollups, remaining allowance and missing estimates |
+| Environmental requirements and test reports | [Review environmental qualification coverage](skills/review-environmental-qualification-coverage/SKILL.md) | Required conditions mapped to test evidence, with uncovered conditions identified |
+| An FMEA | [Review an FMEA for missing failure modes](skills/review-fmea-missing-failure-modes/SKILL.md) | Candidate omissions, failure consequences and questions requiring engineering judgment |
+| Airborne electronic hardware assurance records + applicable objectives | [Check DO-254 assurance evidence](skills/check-do254-hardware-assurance-evidence/SKILL.md) | Evidence gaps against supplied, applicable objectives |
 
 There are also skills for **interfaces, architecture, budgets, safety, reliability,
 change control and design reviews**. [See the full menu →](CATALOG.md)
@@ -53,7 +60,7 @@ Say which route actually worked and whether I need to restart or enable anything
 | **ChatGPT web** | Attached skill instructions + ChatGPT's available file tools. This does not install the MCP. |
 | **Claude Desktop / other local MCP clients** | The same local MCP; [connection instructions](docs/SETUP.md#other-mcp-clients). |
 
-Local setup needs **Python 3.11+ and uv**. No Arc account or model API key needed.
+Local setup needs **Python 3.11+ and uv**. No model API key needed.
 
 ## 💬 Try it
 
@@ -87,6 +94,16 @@ the smallest correction. Preserve the original wording beside the proposal.
 If you cannot inspect the applicable standard, label the review advisory.
 ```
 
+**Build a power budget**
+
+```text
+Use Arc Skills to build a system power budget from component-loads.xlsx.
+Separate standby, nominal and peak demand by operating mode. Preserve units,
+quantities, duty cycles and source values. Show demand against the supplied
+power limits, conversion losses, missing loads and remaining margin.
+Don't assume every peak load operates simultaneously or invent missing values.
+```
+
 **No file yet?**
 
 ```text
@@ -97,7 +114,7 @@ Explain what is missing and propose clearer wording without inventing a latency.
 
 ## 🔒 Your files
 
-The local MCP processes files in your chosen folder and sends no customer data to Arc.
+The local MCP processes files in your chosen folder without uploading them to an external server.
 Your assistant and its AI provider still process the content used in the conversation.
 ChatGPT uploads follow ChatGPT's policies. [Data flow →](docs/PRIVACY.md)
 

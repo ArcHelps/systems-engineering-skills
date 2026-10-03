@@ -1,6 +1,6 @@
 # Privacy and local processing
 
-The server has no Arc connection, outbound HTTP client, telemetry, analytics, model API
+The server has no outbound HTTP client, telemetry, analytics, model API
 client, or customer database. Reads and exports are confined to the workspace selected
 by the operator. stdio is the default transport; HTTP binds only to 127.0.0.1. Do not
 expose this unauthenticated local server publicly or through a tunnel.
@@ -9,7 +9,7 @@ When a connected assistant calls a file tool, the returned content reaches the M
 and may reach that host's AI provider. Prompts and engineering reasoning are performed
 by the host. Local parsing therefore does not mean offline AI. Host retention, logging,
 permissions and connector policies remain relevant. This package never instructs an
-assistant to upload files to Arc servers.
+assistant to upload files to the publisher's servers.
 
 Installing dependencies may contact the configured Python package registry. After
 installation the Python server can run directly without network access. `uv` may also

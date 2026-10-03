@@ -31,3 +31,5 @@ Do not assign an ICD as a new exchange Item Type or claim approval, compatibilit
 - Each parameter has units and source.
 - TBDs have owners.
 - Verification and revision status are explicit.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

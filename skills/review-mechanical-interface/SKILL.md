@@ -31,3 +31,5 @@ Do not invent load factors, accept structural margins, or substitute a visual CA
 - Both parts use a reconciled datum and units.
 - Tolerance ranges, not only nominal values, govern fit.
 - Installation conditions are stated.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

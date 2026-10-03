@@ -31,3 +31,5 @@ Do not alter production hardware, bypass protection, or present a guess as an ac
 - First divergence is evidence-backed.
 - Hypotheses have distinguishing observations.
 - Configuration and clock uncertainty are explicit.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

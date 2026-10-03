@@ -31,3 +31,5 @@ Do not establish or modify a baseline; the submitted baseline contents and autho
 - Intended scope is defined before completeness.
 - Exact Versions, not live latest labels, are checked.
 - Review validity is not inferred from old signatures.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

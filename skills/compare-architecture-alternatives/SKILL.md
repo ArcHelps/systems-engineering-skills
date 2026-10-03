@@ -31,3 +31,5 @@ A trade study is a decision aid, not authorization to replace an approved baseli
 - Alternatives use the same scope.
 - Unknown values stay unknown.
 - Recommendation survives stated constraints or is conditional.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

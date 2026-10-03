@@ -31,3 +31,5 @@ An allocation recommends responsibility; it does not prove feasibility or approv
 - Every in-scope function is owned or marked unallocated.
 - Shared responsibility has a named decision owner.
 - Crossing inputs and outputs are exposed.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

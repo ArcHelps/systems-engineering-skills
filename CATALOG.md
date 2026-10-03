@@ -1,6 +1,8 @@
-# 🍽️ Arc Skills — all 100 engineering tasks
+# 🍽️ Systems Engineering Skills — all 100 tasks
 
-Pick the task you need. Each link opens its instructions, inputs, output and example.
+Tasks for systems and hardware engineers: requirements, electrical and mechanical
+interfaces, power and mass budgets, qualification, safety and verification.
+Each link opens its instructions, inputs, output and example.
 Ask your assistant: **“Use Arc Skills to [task] with [my input].”**
 
 [Get started](README.md#-get-started) · [Example prompts](README.md#-try-it)

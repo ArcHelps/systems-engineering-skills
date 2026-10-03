@@ -31,3 +31,5 @@ Mode review does not decide safety policy or authorize a new state machine imple
 - Each known transition has a trigger and result.
 - Conflicts are based on actual simultaneous conditions.
 - Unspecified recovery remains open.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

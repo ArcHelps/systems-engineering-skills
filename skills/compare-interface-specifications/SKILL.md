@@ -31,3 +31,5 @@ Compatibility is a proposal from compared text. Formal acceptance and system-lev
 - Units and sign conventions are reconciled.
 - Missing values are marked unknown.
 - Every claimed match states its conditions.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

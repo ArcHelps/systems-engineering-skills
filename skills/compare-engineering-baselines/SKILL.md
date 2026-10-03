@@ -31,3 +31,5 @@ Do not alter either immutable baseline or declare a newer baseline approved by c
 - Stable IDs and exact revisions drive comparison.
 - Scope changes are separated from deletions.
 - Evidence freshness is assessed against captured configuration.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

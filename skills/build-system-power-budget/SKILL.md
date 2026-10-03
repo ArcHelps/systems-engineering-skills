@@ -31,3 +31,5 @@ Do not replace transient electrical analysis with an average power table or inve
 - Modes and simultaneity govern sums.
 - Power and energy use distinct units.
 - Unspecified losses remain visible.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

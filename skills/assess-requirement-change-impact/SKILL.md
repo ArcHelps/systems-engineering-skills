@@ -31,3 +31,5 @@ Impact analysis is a review proposal; it does not approve requirement intent, mo
 - Changed technical meaning is explicit.
 - Every impact states a mechanism.
 - Evidence validity is configuration specific.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

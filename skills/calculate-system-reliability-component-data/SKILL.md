@@ -33,3 +33,5 @@ For two required independent units with R₁=0.99 and R₂=0.98 over the same mi
 - The reported precision does not exceed the input quality.
 
 Missing inputs permit a bounded partial assessment with specific evidence requests, not invented values, failure rates, clauses, approvals, or safety decisions. Keep analysis rows in the delivered document or spreadsheet; they do not create new exchange Item Types or Relationship Types. If proposing model edits, retain the original records and route proposals through the project’s authorized validation and review process. A responsible engineer or authority owns formal acceptance.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

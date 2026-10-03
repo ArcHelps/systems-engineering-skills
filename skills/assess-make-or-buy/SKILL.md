@@ -31,3 +31,5 @@ Do not authorize purchasing, invent business terms, or infer certification from 
 - The two options serve the same function.
 - Integrator obligations appear in both columns.
 - Unverified supplier claims remain labeled.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

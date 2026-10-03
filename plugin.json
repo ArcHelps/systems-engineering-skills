@@ -2,18 +2,40 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "arc-engineering",
   "version": "0.1.0",
-  "description": "100 specific systems-engineering skills with local requirements import, traceability, comparison and export tools.",
-  "author": {"name": "Arc"},
-  "keywords": ["systems-engineering", "requirements", "ECSS", "verification", "safety", "local", "MCP"],
+  "description": "100 AI skills for systems and hardware engineers: requirements review, electrical and mechanical interfaces, power and mass budgets, environmental qualification, FMEA and verification. Includes local MCP file tools.",
+  "author": {
+    "name": "Arc"
+  },
+  "keywords": [
+    "systems-engineering",
+    "hardware-engineering",
+    "requirements",
+    "electrical-interfaces",
+    "mechanical-interfaces",
+    "power-budget",
+    "mass-budget",
+    "environmental-qualification",
+    "ECSS",
+    "DO-254",
+    "FMEA",
+    "reliability",
+    "verification",
+    "safety",
+    "local",
+    "MCP"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "Arc Skills",
-        "shortDescription": "Specific engineering tasks, local file tools",
-        "longDescription": "Review requirements, derive children, assess test evidence, analyze interfaces and prepare engineering reviews using 100 focused workflows. Supporting file tools run locally. The connected assistant performs AI reasoning.",
+        "shortDescription": "Systems & hardware engineering",
+        "longDescription": "100 AI skills for systems and hardware engineers: requirements review, electrical and mechanical interfaces, power and mass budgets, environmental qualification, FMEA and verification. Includes local MCP file tools. The connected assistant performs AI reasoning.",
         "developerName": "Arc",
         "category": "Productivity",
-        "capabilities": ["Read", "Write"],
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
         "defaultPrompt": [
           "Use Arc Skills to review this requirement against ECSS-E-ST-10-06.",
           "Use Arc Skills to derive sub-requirements from this parent requirement.",

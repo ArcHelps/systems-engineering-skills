@@ -31,3 +31,5 @@ Do not convert customary engineering practice into approved scope or invent exch
 - Each gap ties to an actual exchange or scenario.
 - Existing unlinked evidence is credited.
 - Draft wording remains a proposal.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

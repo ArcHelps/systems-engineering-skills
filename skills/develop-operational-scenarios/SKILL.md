@@ -31,3 +31,5 @@ A scenario explores use and recovery; it does not authorize new safety behavior 
 - Normal and material off-nominal paths end in observable states.
 - Actor/System responsibility is clear at each step.
 - Unknown policy is not hidden inside a narrative.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

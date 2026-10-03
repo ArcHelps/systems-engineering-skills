@@ -31,3 +31,5 @@ This review does not replace circuit analysis, EMC qualification, or measured in
 - Connector viewpoints and returns are clear.
 - Ratings are compared under matched conditions.
 - Passing checks and unknowns stay distinct.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

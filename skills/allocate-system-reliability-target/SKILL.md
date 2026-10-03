@@ -33,3 +33,5 @@ For two required series subsystems and target 0.99, allocating 0.995 to each yie
 - Allocation and demonstrated performance are clearly separated.
 
 Missing inputs permit a bounded partial assessment with specific evidence requests, not invented values, failure rates, clauses, approvals, or safety decisions. Keep analysis rows in the delivered document or spreadsheet; they do not create new exchange Item Types or Relationship Types. If proposing model edits, retain the original records and route proposals through the project’s authorized validation and review process. A responsible engineer or authority owns formal acceptance.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

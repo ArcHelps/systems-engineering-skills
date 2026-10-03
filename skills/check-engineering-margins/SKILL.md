@@ -31,3 +31,5 @@ Do not invent minimum acceptable margins, accept a waiver, or infer certificatio
 - Sign and limit direction are explicit.
 - Units and conditions match.
 - Missing contributors constrain the conclusion.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

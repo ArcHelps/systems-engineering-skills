@@ -31,3 +31,5 @@ Do not fabricate mandatory functions, severity, or safety conclusions from typic
 - Findings cite a source behavior and architecture location.
 - Acceptable coverage is acknowledged.
 - Requirement uncertainty is distinguished from a missing function.
+
+<!-- Author: Arc (https://www.archelps.com/). -->

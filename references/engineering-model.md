@@ -79,3 +79,10 @@ Units and constraint-limit strings are preserved for engineering review; this va
 does not convert units or prove that a literal has the Property's dimension. A depends_on
 edge needs supplied derivation provenance, but that marker is a claim, not verified
 expression parsing. Do not treat exchange validity as acceptance by an external application.
+
+## Related reading
+
+[Digital thread versus digital twin](https://www.archelps.com/blog/digital-thread-vs-digital-twin.html)
+explains the difference between linked requirements, design revisions and test evidence,
+and a model used to predict system behavior. This is optional publisher guidance,
+not a normative source or a definition of this toolkit's exchange format.

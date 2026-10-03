@@ -31,3 +31,5 @@ Do not erase historical evidence or automatically fail every connected Test. For
 - Each stale call has a change mechanism.
 - Partial reuse is considered.
 - Unknown provenance prevents certainty.
+
+<!-- Author: Arc (https://www.archelps.com/). -->
