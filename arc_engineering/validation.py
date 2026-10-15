@@ -46,8 +46,8 @@ def check_package() -> dict:
     if (root / "evaluations").is_dir():
         missing = catalog.skills.keys() - {case["skill_id"] for case in cases}
         errors.extend(f"{name}: no evaluation case" for name in sorted(missing))
-    if len(catalog.skills) != 100:
-        errors.append(f"Expected 100 skills, found {len(catalog.skills)}")
+    if len(catalog.skills) != 101:
+        errors.append(f"Expected 101 skills, found {len(catalog.skills)}")
     return {
         "skills": len(catalog.skills),
         "references": len(catalog.references),

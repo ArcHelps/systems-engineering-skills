@@ -352,7 +352,8 @@ class CatalogTests(unittest.TestCase):
 
     def test_catalog_is_discoverable_and_extension_digests_match_served_bytes(self):
         catalog = Catalog()
-        self.assertEqual(len(catalog.skills), 100)
+        self.assertEqual(len(catalog.skills), 101)
+        self.assertEqual(len(json.loads(catalog.read_uri("arc://catalog"))), 101)
         self.assertTrue(catalog.search("ECSS individual requirement", limit=5))
         entries = catalog.scan_entries()
         self.assertEqual(len(entries), 5)

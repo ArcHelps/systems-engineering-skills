@@ -1,4 +1,4 @@
-# 🍽️ Systems Engineering Skills — all 100 tasks
+# 🍽️ Systems Engineering Skills — all 101 tasks
 
 Tasks for systems and hardware engineers: requirements, electrical and mechanical
 interfaces, power and mass budgets, qualification, safety and verification.
@@ -15,7 +15,7 @@ Ask your assistant: **“Use Arc Skills to [task] with [my input].”**
 | [Verification and validation](#verification-and-validation) | 12 |
 | [Standards and development assurance](#standards-and-development-assurance) | 8 |
 | [Safety](#safety) | 9 |
-| [Reliability and maintainability](#reliability-and-maintainability) | 4 |
+| [Reliability and maintainability](#reliability-and-maintainability) | 5 |
 | [Configuration and change control](#configuration-and-change-control) | 8 |
 | [Technical management and design reviews](#technical-management-and-design-reviews) | 12 |
 
@@ -133,6 +133,7 @@ Ask your assistant: **“Use Arc Skills to [task] with [my input].”**
 | [Calculate system reliability from component data](skills/calculate-system-reliability-component-data/SKILL.md) | Calculate a bounded system reliability estimate from component data and a defined success model. |
 | [Review a reliability block diagram](skills/review-reliability-block-diagram/SKILL.md) | Check whether a reliability block diagram represents the actual success logic, dependencies, and mission scope. |
 | [Review maintainability requirements](skills/review-maintainability-requirements/SKILL.md) | Check maintainability requirements for measurable repair, access, support, and operating context. |
+| [Review root cause and corrective action for a failure report](skills/review-failure-root-cause-corrective-action/SKILL.md) | Challenge whether a failure report proves its root cause and whether corrective action covers the mechanism, escape point, and every affected unit. |
 
 ## Configuration and change control
 

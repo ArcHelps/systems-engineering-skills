@@ -55,8 +55,9 @@ class Catalog:
         return self.skills[skill_id]
 
     def search(self, query: str = "", category: str = "", limit: int = 20) -> list[dict]:
-        if not 1 <= limit <= 100:
-            raise ValueError("limit must be between 1 and 100")
+        cap = max(100, len(self.skills))
+        if not 1 <= limit <= cap:
+            raise ValueError(f"limit must be between 1 and {cap}")
         # Simple plural normalization keeps "ECSS requirements" useful without a search service.
         tokens = [
             token[:-1]
@@ -141,7 +142,7 @@ class Catalog:
         if uri == "arc://catalog":
             import json
 
-            return json.dumps(self.search(limit=100), ensure_ascii=False)
+            return json.dumps(self.search(limit=max(100, len(self.skills))), ensure_ascii=False)
         match = re.fullmatch(r"arc://references/([a-z0-9-]+)", uri)
         if match:
             return self.reference(match[1])

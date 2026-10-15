@@ -14,7 +14,7 @@ Stars are rounded counts shown by GitHub at review time, not quality evidence.
 
 Our README follows: one sentence → input/task/output examples → one adaptive
 setup prompt → client support → useful prompts → short privacy/free-use note.
-The complete 100-skill menu remains CATALOG.md. Technical instructions and evidence
+The complete 101-skill menu remains CATALOG.md. Technical instructions and evidence
 live under docs/. Existing skill folders and Python package layout stay intact.
 
 One README plus a catalogue is the lowest-maintenance public surface. Putting all

@@ -1,11 +1,11 @@
 # 🛠️ Systems Engineering Skills
 
-**100 free AI skills for systems and hardware engineers.**
+**101 free AI skills for systems and hardware engineers.**
 
 Review requirements against ECSS. Check electrical and mechanical interfaces.
 Build power and mass budgets. Review environmental qualification tests, FMEA and verification evidence.
 
-**[Browse all 100 skills →](CATALOG.md)** · [Setup](docs/SETUP.md) · [Example prompts](#-try-it)
+**[Browse all 101 skills →](CATALOG.md)** · [Setup](docs/SETUP.md) · [Example prompts](#-try-it)
 
 ## 🍽️ Pick a task
 
@@ -56,7 +56,7 @@ Say which route actually worked and whether I need to restart or enable anything
 
 | Where you use it | What works |
 |---|---|
-| **Codex on your computer** | Local MCP with all 100 skills and file tools. Recommended. |
+| **Codex on your computer** | Local MCP with all 101 skills and file tools. Recommended. |
 | **ChatGPT web** | Attached skill instructions + ChatGPT's available file tools. This does not install the MCP. |
 | **Claude Desktop / other local MCP clients** | The same local MCP; [connection instructions](docs/SETUP.md#other-mcp-clients). |
 
