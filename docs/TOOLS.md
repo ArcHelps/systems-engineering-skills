@@ -35,7 +35,7 @@ It is a local service without public authentication; no public hosting is provid
 For portable plugin clients, `plugin.json` and `mcp.json` launch the same server. Set
 `ARC_ENGINEERING_WORKSPACE` to select a folder; otherwise the launcher creates a
 dedicated `workspace` under `PLUGIN_DATA`, or under the plugin folder as a fallback.
-It requires uv. OpenAI's Scan Tools bundle advertises five skills; all 100 remain
+It requires uv. OpenAI's Scan Tools bundle advertises five skills; all 101 remain
 available through standard MCP prompts/resources/tools and the ZIP.
 
 ## Maintain the package

@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "arc-engineering",
   "version": "0.1.0",
-  "description": "100 AI skills for systems and hardware engineers: requirements review, electrical and mechanical interfaces, power and mass budgets, environmental qualification, FMEA and verification. Includes local MCP file tools.",
+  "description": "101 AI skills for systems and hardware engineers: requirements review, electrical and mechanical interfaces, power and mass budgets, environmental qualification, FMEA and verification. Includes local MCP file tools.",
   "author": {
     "name": "Arc"
   },
@@ -29,7 +29,7 @@
       "interface": {
         "displayName": "Arc Skills",
         "shortDescription": "Systems & hardware engineering",
-        "longDescription": "100 AI skills for systems and hardware engineers: requirements review, electrical and mechanical interfaces, power and mass budgets, environmental qualification, FMEA and verification. Includes local MCP file tools. The connected assistant performs AI reasoning.",
+        "longDescription": "101 AI skills for systems and hardware engineers: requirements review, electrical and mechanical interfaces, power and mass budgets, environmental qualification, FMEA and verification. Includes local MCP file tools. The connected assistant performs AI reasoning.",
         "developerName": "Arc",
         "category": "Productivity",
         "capabilities": [

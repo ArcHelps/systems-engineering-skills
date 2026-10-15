@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "arc-engineering-mcp"
 version = "0.1.0"
-description = "100 AI skills for systems and hardware engineers with local MCP file tools"
+description = "101 AI skills for systems and hardware engineers with local MCP file tools"
 requires-python = ">=3.11"
 license = "MIT"
 dependencies = [

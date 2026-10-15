@@ -43,9 +43,11 @@ def main():
             # No public bind until deployment, authentication and tenant scoping are designed.
             server.run(transport="streamable-http", host="127.0.0.1", port=args.port)
     elif args.command == "list":
+        catalog = Catalog()
+        limit = max(100, len(catalog.skills))
         print(
             json.dumps(
-                Catalog().search(args.query, args.category, 100), ensure_ascii=False, indent=2
+                catalog.search(args.query, args.category, limit), ensure_ascii=False, indent=2
             )
         )
     elif args.command == "config":

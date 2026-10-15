@@ -22,7 +22,7 @@ class ProtocolTests(unittest.TestCase):
                     tools = await client.list_tools()
                     self.assertIn("import_requirements", {tool.name for tool in tools.tools})
                     prompts = await client.list_prompts()
-                    self.assertEqual(len(prompts.prompts), 100)
+                    self.assertEqual(len(prompts.prompts), 101)
                     name = prompts.prompts[0].name
                     prompt = await client.get_prompt(name, {"input": "Synthetic engineering input"})
                     self.assertIn("Synthetic engineering input", prompt.messages[0].content.text)
